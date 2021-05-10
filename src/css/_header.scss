@@ -1,0 +1,58 @@
+header{
+    background-color: $primary;
+    .user__name{
+        font-weight: bold;
+    }
+    .header_nav{
+        .header_nav_list{
+            display: flex;
+            justify-content: flex-end;
+
+            li{
+                padding: 1rem;
+                a, span{
+                    color: $light;
+                    cursor: pointer;
+                }
+
+                &:hover{
+                    background-color: $light;
+                }
+                &:hover > a, &:hover > span{
+                    color: $primary;
+                }
+            }
+            
+            
+            .nav_dropdown{
+                position: relative; 
+
+                .dropdown{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: $primary;
+                    width: 20rem;
+                    border-bottom-left-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
+                    display: none;
+
+                    li{
+                        border-bottom: 1px solid $accent;
+                    }
+                    li:last-child{
+                        border-bottom: none;
+                    }
+                }
+                
+                &:hover > .dropdown{
+                    display: block;
+                }
+
+                .visible{
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+
+table{
+    width: 100%;
+    margin: 2rem auto; 
+    box-shadow: 0 0 2rem 1rem $lightgrey; 
+    border-collapse: collapse;
+
+    thead{
+        background-color: $dark;
+        color: $light;
+    }
+    tr:nth-child(even){
+        background-color: $lightgrey;
+    } 
+    th, td{
+        padding: 1rem; 
+        text-align: left;
+    }  
+
+    .actions span{
+        margin-right: 1rem;
+    }
+
+    .fa{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .fa-edit{
+        color: $greenaccent;
+    }
+    .fa-trash-o{
+        color: $primary;
+    }
+    .fa-eye{
+        color:$bluish;
+    }
+}
+
+
+.daily-tables{ 
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+   div{
+       flex-basis: 48%;
+   }
+   .total{
+       font-weight: bold;
+       font-size:2rem;
+       background-color: $greenaccent;
+   }
+}
+
+.client-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

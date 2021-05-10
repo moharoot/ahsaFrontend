@@ -1,0 +1,75 @@
+.overlay{ 
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    form{
+        margin: 2rem auto;
+        box-shadow: 0 0 2rem .5rem $lightgrey;
+        padding: 1rem;
+    
+        input[type="number"],
+        input[type="email"],
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            border-radius: .3rem;
+            border:none;
+            background-color: $lightgrey; 
+            margin-bottom: 1rem;
+            outline: none;
+    
+            &:focus{
+                border-left: 2px solid $primary;
+            }
+        }
+    
+        input[type="submit"]{
+            padding: 1rem 1.5rem;
+            margin:1rem auto;
+            background-color: $primary;
+            color: $light;
+            text-transform: uppercase;
+            border:none;
+            box-shadow: 0 0 3px $primary;
+        }
+    }
+
+    .wrapper{
+        width: 50%; 
+        background-color: $light;
+        position: relative;
+        padding: 5rem;
+    }
+   
+    
+    .close{ 
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        top: 0rem;
+        right: 0rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$primary;
+        cursor: pointer;
+
+        .fa{
+            font-size: 2rem;
+            color: $dark;
+        }
+    }
+}

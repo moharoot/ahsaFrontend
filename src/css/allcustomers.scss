@@ -1,0 +1,70 @@
+.customers_wrapper{
+    display: flex;
+    justify-content: space-between; 
+    form{
+        width: 60rem; 
+        display: flex;
+    }
+    .btn{
+        padding: .8rem 1.5rem;
+        border-radius: .5rem;
+        background-color:  $greenish;
+        border: none;
+        color: $light;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    input, button{
+        outline: none;
+    }
+    input[type=text]{
+        padding: .8rem 1.5rem;
+        flex: 1;
+        border-radius: .5rem;
+        border: .1rem solid $darkgrey;
+    }
+}
+
+table{
+    border-collapse: collapse; 
+    border: none;
+    width: 100%;
+    text-align: left;
+    th{
+        font-size: 1.4rem; 
+        padding: 1rem;
+        background-color: $dark;
+        color: $light;
+    }
+    td{
+        padding: .5rem;
+    }
+    tbody tr:nth-child(even){
+        background: $light;
+    }
+    .actions{
+        display: flex;
+        justify-content: space-between;
+
+        .fa{
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .fa-edit{
+            color: $greenish;
+        }
+        .fa-eye{
+            color: $bluish;
+        }
+        .fa-trash-o{
+            color: $pinkish;
+        }
+    }
+}
+.title{
+    background-color: $greenaccent;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}

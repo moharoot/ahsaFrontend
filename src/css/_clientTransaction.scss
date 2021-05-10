@@ -1,0 +1,76 @@
+.transaction__history{
+    .history-table{
+        margin-top: 2rem;
+        border-top: 2px solid $accent;
+    }
+    h3{
+        margin-top: 2rem;
+    }
+    .transaction__details{
+        display: flex; 
+        margin-top: 3rem;
+            >div{
+                margin-right: 3rem;
+            }
+    }
+}
+.add-form{
+    text-align: right;
+    margin-bottom: 2rem;
+
+    a, span{
+        background-color: $greenish;
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        color: $light;
+        border-radius: .3rem;
+        box-shadow: 0 0 .2rem $greenish;
+        cursor: pointer;
+    }
+}
+
+.add-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0 4rem;
+
+    .debit-btn{
+        background-color: orangered !important;
+        box-shadow: 0 0 .2rem orangered;
+    }
+    .personalized-btn{
+        background-color: $primary !important;
+        box-shadow: 0 0 .2rem $primary;
+    }
+    .clear-btn{
+        background-color: $bluish !important;
+        box-shadow: 0 0 .2rem $bluish;
+    }
+}
+.closing-and-rate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    form{
+        input[type=number]{
+            padding: 1rem;
+        }
+
+        input[type=submit]{
+            padding: 1rem 1.5rem;
+            margin-left:1rem;
+            background-color: $greenish;
+            color: $light;
+            text-transform: uppercase;
+            border:none;
+            box-shadow: 0 0 3px $greenish;
+        }
+    }
+
+    p{
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}

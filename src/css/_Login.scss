@@ -1,0 +1,40 @@
+.login__container{
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+.text{
+    .logo{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: $primary;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+form{
+    background-color: $light;
+    padding: 4rem;
+    margin-top: 1rem;
+
+    input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    input[type="submit"]{
+        background-color: $greenish;
+        color: $light;
+        border: none;
+        box-shadow: 0 0 3px $greenish;
+        text-transform: uppercase;
+    }
+}
+}
